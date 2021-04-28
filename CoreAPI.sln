@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.809.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreAPI", "CoreAPI\CoreAPI.csproj", "{DA1BC340-1067-489B-9A8D-69C9D1769D4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockAPI", "CoreAPI\MockAPI.csproj", "{9EE1D593-2FFB-4F1F-AB74-139F7F763CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotAPIGateway", "OcelotAPIGateway\OcelotAPIGateway.csproj", "{95BA35A5-DD9B-4BC9-89C4-5916C82CF442}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DA1BC340-1067-489B-9A8D-69C9D1769D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA1BC340-1067-489B-9A8D-69C9D1769D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA1BC340-1067-489B-9A8D-69C9D1769D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA1BC340-1067-489B-9A8D-69C9D1769D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE1D593-2FFB-4F1F-AB74-139F7F763CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE1D593-2FFB-4F1F-AB74-139F7F763CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE1D593-2FFB-4F1F-AB74-139F7F763CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE1D593-2FFB-4F1F-AB74-139F7F763CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BA35A5-DD9B-4BC9-89C4-5916C82CF442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BA35A5-DD9B-4BC9-89C4-5916C82CF442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BA35A5-DD9B-4BC9-89C4-5916C82CF442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BA35A5-DD9B-4BC9-89C4-5916C82CF442}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

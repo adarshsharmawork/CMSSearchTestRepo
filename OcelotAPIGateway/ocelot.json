@@ -1,0 +1,16 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/commands",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 20343
+        }
+      ],
+      "UpstreamPathTemplate": "/api/commands",
+      "UpstreamHttpMethod": [ "GET", "POST", "Put", "Delete" ]
+    }
+  ]
+}
