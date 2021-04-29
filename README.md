@@ -10,7 +10,7 @@ Thins to remeber prior to running the project</h2>
 <ul><li>
 All the 3 solutions need to run for the Ocelot Gateway to work!  
 </li>
-<li>Minor updates needed to be made in Ocelot.json file for it to work on IIS express, as IIS doesn't support MAC the current port numbers are not configured to work for ISS</li>
+<li>Minor updates needed to be made in Ocelot.json file for it to work on IIS express, as IIS doesn't support MAC the current port numbers are not configured to work for IIS</li>
 <li>
 Look for the port nubmers being used in ocelot.json file and copy the proper port numbers from the respective APIs
 </li>
