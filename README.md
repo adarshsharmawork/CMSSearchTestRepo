@@ -6,7 +6,7 @@
 </li></ul>
 </li>
 <h2> 
-Thins to remeber prior to running the project</h2>
+Things to remeber prior to running the project</h2>
 <ul><li>
 All the 3 solutions need to run for the Ocelot Gateway to work!  
 </li>
