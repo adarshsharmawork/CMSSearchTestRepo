@@ -8,27 +8,27 @@ namespace CoreAPI.Controllers
 {
     [Route("api/[Controller]")]
     [ApiController]
-    public class CommandsController: ControllerBase
+    public class CustomersController: ControllerBase
     {
-        private readonly ICommandRepo _data;
+        private readonly ICustomerRepo _data;
 
-        public CommandsController(ICommandRepo command)
+        public CustomersController(ICustomerRepo command)
         {
             _data = command;
         }
         
         [HttpGet]
-        public ActionResult<IEnumerable<Command>> GetAllApps()
+        public ActionResult<IEnumerable<Customer>> GetAllApps()
         {
-            var result = _data.GetAllApps();
+            var result = _data.GetAllCustomers();
 
             return Ok(result);
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Command> GetCommandById(int Id)
+        public ActionResult<Customer> GetCommandById(int Id)
         {
-            var result = _data.GetById(1);
+            var result = _data.GetCustomerId(1);
 
             return Ok(result);
         }

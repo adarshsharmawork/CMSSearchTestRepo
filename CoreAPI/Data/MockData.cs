@@ -4,27 +4,27 @@ using CoreAPI.Models;
 
 namespace CoreAPI.Data
 {
-    public class MockData : ICommandRepo
+    public class MockData : ICustomerRepo
     {
-        public IEnumerable<Command> GetAllApps()
+        IEnumerable<Customer> ICustomerRepo.GetAllCustomers()
         {
-            List<Command> result =new List<Command>();
+            List<Customer> result = new List<Customer>();
 
             for (int i = 0; i < 3; i++)
             {
-                Command command = new Command();
-                command.Id = i;
-                command.HowTo = "Same again" + i;
-                command.Line = "Lineno" + i;
-                command.Platform = "Platoform No" + i;
-                result.Add(command);
+                Customer customer = new Customer();
+                customer.CustomerId = i;
+                customer.CustomerName = "Adarsh" + i;
+                customer.CustomerAddress = "New Address" + i;
+                customer.CustomerNumber = "183938" + i;
+                result.Add(customer);
             }
             return result;
         }
 
-        public Command GetById(int Id)
+        Customer ICustomerRepo.GetCustomerId(int Id)
         {
-            return new Command { Id = 0, HowTo = "Using Pan", Line = "great", Platform = "Gas" };
+            return new Customer { CustomerId = 1, CustomerName = "New Name", CustomerAddress = "great address", CustomerNumber = "4749393" };
         }
     }
 }

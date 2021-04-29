@@ -28,7 +28,7 @@ namespace CoreAPI
         {
             services.AddControllers();
 
-            services.AddScoped<ICommandRepo, MockData>();
+            services.AddScoped<ICustomerRepo, MockData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
