@@ -11,6 +11,18 @@
       ],
       "UpstreamPathTemplate": "/customerAPI",
       "UpstreamHttpMethod": [ "GET", "POST", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/products",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 51201
+        }
+      ],
+      "UpstreamPathTemplate": "/productsAPI",
+      "UpstreamHttpMethod": [ "GET", "POST", "Put", "Delete" ]
     }
   ]
 }

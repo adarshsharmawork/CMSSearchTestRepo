@@ -18,7 +18,7 @@ namespace CoreAPI.Controllers
         }
         
         [HttpGet]
-        public ActionResult<IEnumerable<Customer>> GetAllApps()
+        public ActionResult<IEnumerable<Customer>> GetAllCustomerData()
         {
             var result = _data.GetAllCustomers();
 
@@ -26,7 +26,7 @@ namespace CoreAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Customer> GetCommandById(int Id)
+        public ActionResult<Customer> GetCustomerById(int Id)
         {
             var result = _data.GetCustomerId(1);
 
