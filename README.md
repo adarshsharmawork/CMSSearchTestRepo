@@ -12,9 +12,9 @@ All the 3 solutions need to run for the Ocelot Gateway to work!
 </li>
 <li>Minor updates needed to be made in Ocelot.json file for it to work on IIS express, as IIS doesn't support MAC the current port numbers are not configured to work for IIS</li>
 <li>
-Look for the port nubmers being used in ocelot.json file and copy the proper port numbers from the respective APIs
+The port number needs to be updated in ocelot.json file in the routes in the Ocelot solution
 </li>
-<li>For example: for CustomerAPI, look into the launchsettings and copy the port number of IIS express and paste the same in ocelot.json, same procedure to be followed for ProductsAPI</li>
+<li>For example: for CustomerAPI, look into the launchsettings.json and copy the port number of IIS express and paste the same in ocelot.json, same procedure to be followed for ProductsAPI</li>
 <li> If port numbers are not updated then Gateway will throw error but the individual APIs would still work</li>
 </ul>
 
